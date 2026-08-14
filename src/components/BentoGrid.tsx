@@ -5,136 +5,130 @@ import {
   UtensilsCrossed,
   Sparkles,
   Trophy,
-  Users,
 } from "lucide-react";
 
 export default function BentoGrid() {
   return (
     <section
       id="estrutura"
-      className="py-28 max-w-7xl mx-auto px-6 relative bg-[#050505]"
+      className="py-20 max-w-7xl mx-auto px-6 relative bg-[#050505]"
     >
-      <div className="text-center max-w-2xl mx-auto mb-20 relative z-10">
+      <div className="text-center max-w-2xl mx-auto mb-14 relative z-10">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0A0A0A] border border-[rgba(212,255,0,0.3)] text-xs text-[#D4FF00] mb-4 font-mono uppercase tracking-widest backdrop-blur-md shadow-[0_0_25px_rgba(212,255,0,0.15)]">
           <Trophy className="w-3.5 h-3.5" />
           <span>Infraestrutura de Elite</span>
         </div>
-        <h2 className="text-4xl sm:text-5xl font-black tracking-tighter text-white uppercase italic leading-[0.95]">
-          Feito para quem exige excelência absoluta em cada detalhe.
+        <h2 className="text-3xl sm:text-4xl font-black tracking-tighter text-white uppercase italic leading-[0.95]">
+          Para quem exige excelência em cada detalhe.
         </h2>
-        <p className="mt-4 text-[#A3A3A3] text-lg max-w-xl mx-auto font-medium leading-relaxed font-sans">
-          Mais do que uma quadra, um complexo projetado para elevar o nível do
-          seu futebol e proporcionar o máximo de conforto.
+        <p className="mt-3 text-[#A3A3A3] text-sm sm:text-base max-w-lg mx-auto font-medium leading-relaxed font-sans">
+          Um complexo projetado para elevar o nível do seu futebol com máximo
+          conforto.
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 relative z-10">
-        {/* Bloco 1: Gramado (8 colunas) */}
-        <div className="lg:col-span-8 bg-gradient-to-br from-[#0A0A0A] via-[#070707] to-[#050505] rounded-[2rem] p-8 sm:p-10 relative overflow-hidden flex flex-col justify-between min-h-[360px] border border-[rgba(212,255,0,0.2)] shadow-[0_20px_50px_rgba(0,0,0,0.4)] group hover:border-[rgba(212,255,0,0.5)] transition-all duration-500">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-[rgba(212,255,0,0.03)] rounded-full blur-3xl pointer-events-none" />
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 relative z-10">
+        {/* Bloco 1: Gramado (7 colunas) */}
+        <div className="lg:col-span-7 bg-gradient-to-br from-[#0A0A0A] via-[#070707] to-[#050505] rounded-[1.75rem] p-6 sm:p-8 relative overflow-hidden flex flex-col justify-between border border-[rgba(212,255,0,0.2)] shadow-xl group hover:border-[rgba(212,255,0,0.4)] transition-all duration-300">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[rgba(212,255,0,0.03)] rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative z-10">
-            <div className="w-14 h-14 rounded-2xl bg-[#121212] border border-[rgba(212,255,0,0.3)] flex items-center justify-center text-[#D4FF00] mb-6 shadow-[0_0_20px_rgba(212,255,0,0.15)] transition-transform duration-300 group-hover:scale-105">
-              <ShieldCheck className="w-7 h-7" />
+            <div className="w-11 h-11 rounded-xl bg-[#121212] border border-[rgba(212,255,0,0.3)] flex items-center justify-center text-[#D4FF00] mb-4 shadow-[0_0_15px_rgba(212,255,0,0.1)]">
+              <ShieldCheck className="w-5 h-5" />
             </div>
-            <span className="text-xs font-mono tracking-[0.2em] text-[#D4FF00] uppercase block mb-2 font-bold">
-              Padrão FIFA Pro • Absorção Avançada
+            <span className="text-[10px] font-mono tracking-[0.2em] text-[#D4FF00] uppercase block mb-1 font-bold">
+              Padrão FIFA Pro
             </span>
-            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tighter uppercase italic">
-              Gramado Sintético Alemão de Alta Performance
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tighter uppercase italic">
+              Gramado Sintético Alemão
             </h3>
-            <p className="mt-4 text-[#A3A3A3] text-base max-w-xl font-medium leading-relaxed font-sans">
-              Fibras monofilamento com amortecimento inteligente de dupla
-              camada. Elimina totalmente o risco de torções e garante um rolar
-              de bola idêntico aos melhores gramados naturais europeus.
+            <p className="mt-2 text-[#A3A3A3] text-xs sm:text-sm font-medium leading-relaxed font-sans">
+              Amortecimento inteligente de dupla camada. Elimina risco de
+              torções e garante rolagem perfeita, idêntica à Europa.
             </p>
           </div>
 
-          <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono text-[#A3A3A3] relative z-10 font-bold">
+          <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between gap-4 text-[11px] font-mono text-[#A3A3A3] relative z-10 font-bold">
             <span className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#D4FF00] animate-pulse" />
-              CERTIFICAÇÃO INTERNACIONAL FIFA QUALITY
+              FIFA QUALITY
             </span>
-            <span className="text-[#D4FF00] text-xs bg-[#121212] px-3.5 py-1.5 rounded-full border border-[rgba(212,255,0,0.3)] uppercase tracking-wider">
-              Absorção de Impacto 99.4%
+            <span className="text-[#D4FF00] bg-[#121212] px-3 py-1 rounded-full border border-[rgba(212,255,0,0.3)] uppercase tracking-wider">
+              Absorção 99.4%
             </span>
           </div>
         </div>
 
-        {/* Bloco 2: Automação / App (4 colunas) */}
-        <div className="lg:col-span-4 bg-[#0A0A0A] rounded-[2rem] p-8 sm:p-10 relative overflow-hidden flex flex-col justify-between min-h-[360px] border border-white/5 shadow-xl group hover:border-[rgba(212,255,0,0.2)] transition-all duration-500">
+        {/* Bloco 2: Automação / App (5 colunas) */}
+        <div className="lg:col-span-5 bg-[#0A0A0A] rounded-[1.75rem] p-6 sm:p-8 relative overflow-hidden flex flex-col justify-between border border-white/5 shadow-xl group hover:border-[rgba(212,255,0,0.2)] transition-all duration-300">
           <div className="relative z-10">
-            <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[#D4FF00] mb-6 transition-transform duration-300 group-hover:scale-105">
-              <Cpu className="w-6 h-6" />
+            <div className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#D4FF00] mb-4">
+              <Cpu className="w-5 h-5" />
             </div>
-            <span className="text-xs font-mono tracking-[0.2em] text-[#D4FF00] uppercase block mb-2 font-bold">
+            <span className="text-[10px] font-mono tracking-[0.2em] text-[#D4FF00] uppercase block mb-1 font-bold">
               Tecnologia Integrada
             </span>
-            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tighter uppercase italic">
-              Placar Digital & App Exclusivo
+            <h3 className="text-xl font-black text-white tracking-tighter uppercase italic">
+              Placar & App Exclusivo
             </h3>
-            <p className="mt-3 text-[#A3A3A3] text-sm font-medium leading-relaxed font-sans">
-              Controle cronometrado de partidas, súmulas online e filmagem
-              automática dos melhores lances direto no seu celular.
+            <p className="mt-2 text-[#A3A3A3] text-xs sm:text-sm font-medium leading-relaxed font-sans">
+              Controle cronometrado, súmulas online e filmagem automática dos
+              melhores lances direto no celular.
             </p>
           </div>
 
-          <div className="mt-10 pt-6 border-t border-white/10 text-xs font-mono text-[#D4FF00] font-black tracking-wider relative z-10">
+          <div className="mt-6 pt-4 border-t border-white/10 text-[11px] font-mono text-[#D4FF00] font-black tracking-wider relative z-10">
             ESTATÍSTICAS EM TEMPO REAL
           </div>
         </div>
 
-        {/* Bloco 3: Lounge (4 colunas) */}
-        <div className="lg:col-span-4 bg-[#0A0A0A] rounded-[2rem] p-8 sm:p-10 relative overflow-hidden flex flex-col justify-between min-h-[360px] border border-white/5 shadow-xl group hover:border-[rgba(212,255,0,0.2)] transition-all duration-500">
+        {/* Bloco 3: Lounge (5 colunas) */}
+        <div className="lg:col-span-5 bg-[#0A0A0A] rounded-[1.75rem] p-6 sm:p-8 relative overflow-hidden flex flex-col justify-between border border-white/5 shadow-xl group hover:border-[rgba(212,255,0,0.2)] transition-all duration-300">
           <div className="relative z-10">
-            <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-[#D4FF00] mb-6 transition-transform duration-300 group-hover:scale-105">
-              <UtensilsCrossed className="w-6 h-6" />
+            <div className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-[#D4FF00] mb-4">
+              <UtensilsCrossed className="w-5 h-5" />
             </div>
-            <span className="text-xs font-mono tracking-[0.2em] text-[#D4FF00] uppercase block mb-2 font-bold">
+            <span className="text-[10px] font-mono tracking-[0.2em] text-[#D4FF00] uppercase block mb-1 font-bold">
               Área de Convivência
             </span>
-            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tighter uppercase italic">
+            <h3 className="text-xl font-black text-white tracking-tighter uppercase italic">
               Sports Bar & Lounge
             </h3>
-            <p className="mt-3 text-[#A3A3A3] text-sm font-medium leading-relaxed font-sans">
-              O pós-jogo mais disputado da região. Chopp artesanal ultragelado,
-              petiscos selecionados e telões 4K com as principais ligas.
+            <p className="mt-2 text-[#A3A3A3] text-xs sm:text-sm font-medium leading-relaxed font-sans">
+              Chopp artesanal ultragelado, petiscos selecionados e telões 4K
+              para o pós-jogo perfeito.
             </p>
           </div>
 
-          <div className="mt-10 pt-6 border-t border-white/10 text-xs font-mono text-[#D4FF00] font-black tracking-wider relative z-10 flex items-center gap-2">
-            <Users className="w-4 h-4" />
-            <span>ATMOSFERA DE CLUBE EXCLUSIVO</span>
+          <div className="mt-6 pt-4 border-t border-white/10 text-[11px] font-mono text-[#D4FF00] font-black tracking-wider relative z-10">
+            ATMOSFERA DE CLUBE EXCLUSIVO
           </div>
         </div>
 
-        {/* Bloco 4: Vestiários VIP (8 colunas) */}
-        <div className="lg:col-span-8 bg-gradient-to-br from-[#0A0A0A] via-[#070707] to-[#050505] rounded-[2rem] p-8 sm:p-10 relative overflow-hidden flex flex-col justify-between min-h-[360px] border border-[rgba(212,255,0,0.2)] shadow-[0_20px_50px_rgba(0,0,0,0.4)] group hover:border-[rgba(212,255,0,0.5)] transition-all duration-500">
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-[rgba(212,255,0,0.03)] rounded-full blur-3xl pointer-events-none" />
+        {/* Bloco 4: Vestiários VIP (7 colunas) */}
+        <div className="lg:col-span-7 bg-gradient-to-br from-[#0A0A0A] via-[#070707] to-[#050505] rounded-[1.75rem] p-6 sm:p-8 relative overflow-hidden flex flex-col justify-between border border-[rgba(212,255,0,0.2)] shadow-xl group hover:border-[rgba(212,255,0,0.4)] transition-all duration-300">
+          <div className="absolute bottom-0 left-0 w-64 h-64 bg-[rgba(212,255,0,0.03)] rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative z-10">
-            <div className="w-14 h-14 rounded-2xl bg-[#121212] border border-[rgba(212,255,0,0.3)] flex items-center justify-center text-[#D4FF00] mb-6 shadow-[0_0_20px_rgba(212,255,0,0.15)] transition-transform duration-300 group-hover:scale-105">
-              <Sparkles className="w-7 h-7" />
+            <div className="w-11 h-11 rounded-xl bg-[#121212] border border-[rgba(212,255,0,0.3)] flex items-center justify-center text-[#D4FF00] mb-4 shadow-[0_0_15px_rgba(212,255,0,0.1)]">
+              <Sparkles className="w-5 h-5" />
             </div>
-            <span className="text-xs font-mono tracking-[0.2em] text-[#D4FF00] uppercase block mb-2 font-bold">
+            <span className="text-[10px] font-mono tracking-[0.2em] text-[#D4FF00] uppercase block mb-1 font-bold">
               Conforto de Alto Padrão
             </span>
-            <h3 className="text-2xl sm:text-3xl font-black text-white tracking-tighter uppercase italic">
-              Vestiários Estilo Champions League
+            <h3 className="text-xl sm:text-2xl font-black text-white tracking-tighter uppercase italic">
+              Vestiários Champions League
             </h3>
-            <p className="mt-4 text-[#A3A3A3] text-base max-w-xl font-medium leading-relaxed font-sans">
+            <p className="mt-2 text-[#A3A3A3] text-xs sm:text-sm font-medium leading-relaxed font-sans">
               Duchas de alta pressão com controle térmico, armários individuais
-              inteligentes com biometria e acabamento impecável para o seu
-              bem-estar.
+              inteligentes e total bem-estar.
             </p>
           </div>
 
-          <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs font-mono text-[#A3A3A3] relative z-10 font-bold">
-            <span className="tracking-wider">
-              HIGIENIZAÇÃO E ESTERILIZAÇÃO CONTÍNUA
-            </span>
-            <span className="text-[#D4FF00] text-xs bg-[#121212] px-3.5 py-1.5 rounded-full border border-[rgba(212,255,0,0.3)] uppercase tracking-wider">
-              Kit Higiene & Toalhas Premium
+          <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between gap-4 text-[11px] font-mono text-[#A3A3A3] relative z-10 font-bold">
+            <span className="tracking-wider">HIGIENIZAÇÃO CONTÍNUA</span>
+            <span className="text-[#D4FF00] bg-[#121212] px-3 py-1 rounded-full border border-[rgba(212,255,0,0.3)] uppercase tracking-wider">
+              Kit Toalhas Premium
             </span>
           </div>
         </div>

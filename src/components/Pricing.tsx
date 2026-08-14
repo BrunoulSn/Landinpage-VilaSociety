@@ -35,7 +35,7 @@ const plans: Plan[] = [
   {
     id: "campeonato",
     name: "Corporativo & Torneios",
-    price: "Sob consulta",
+    price: "Consulta",
     period: "pacote customizado",
     description:
       "Solução completa para campeonatos empresariais ou copas amadoras.",

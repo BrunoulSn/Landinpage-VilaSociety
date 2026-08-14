@@ -68,7 +68,6 @@ export default function Hero() {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4FF00] via-[#E5FF66] to-white">
             padrão dos profissionais
           </span>
-          .
         </motion.h1>
 
         <motion.p

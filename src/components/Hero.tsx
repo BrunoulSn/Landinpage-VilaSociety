@@ -50,14 +50,13 @@ export default function Hero() {
               </motion.span>
 
               <motion.div
-                initial={{ scale: 0.1, opacity: 0, z: -1000 }}
+                initial={{ scale: 0.1, opacity: 0 }}
                 animate={{
-                  scale: [0.1, 1.8, 14],
+                  scale: [0.1, 1.3, 1],
                   opacity: [0, 1, 1],
-                  rotate: [0, 180, 360],
                 }}
-                transition={{ duration: 2.2, ease: [0.4, 0, 0.2, 1] }}
-                className="relative w-40 h-40 sm:w-56 sm:h-56 mx-auto rounded-full overflow-hidden shadow-[0_0_100px_rgba(212,255,0,0.2)] border border-[rgba(212,255,0,0.3)]"
+                transition={{ duration: 2.0, ease: [0.4, 0, 0.2, 1] }}
+                className="relative w-36 h-36 sm:w-52 sm:h-52 mx-auto rounded-full overflow-hidden shadow-[0_0_100px_rgba(212,255,0,0.2)] border border-[rgba(212,255,0,0.3)] bg-black"
               >
                 <img
                   src="https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=60,fit=pad,format=webp/uploads/2026/06/image-42.png"
@@ -79,17 +78,17 @@ export default function Hero() {
         )}
       </AnimatePresence>
 
-      {/* Background Video */}
+      {/* Background Video com sobreposição otimizada para legibilidade */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-[#050505]/50 z-10" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(212,255,0,0.08),transparent_60%)] z-10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/50 to-black/30 z-10" />
+        <div className="absolute inset-0 bg-black/40 z-10" />
 
         <video
           autoPlay
           loop
           muted={isMuted}
           playsInline
-          className="w-full h-full object-cover opacity-35 scale-105 filter saturate-125 contrast-125"
+          className="w-full h-full object-cover opacity-75 scale-105 filter saturate-110 contrast-105"
         >
           <source
             src="https://media.istockphoto.com/id/2273930960/pt/v%C3%ADdeo/coach-soccer-assistant-discussing-some-plays-with-the-team.mp4?s=mp4-640x640-is&k=20&c=07Jfjz5UzUx-9l3IPS5xHekb3Mtk1i44DRQ5KE6Z1Gw="
@@ -115,19 +114,6 @@ export default function Hero() {
 
       {/* Conteúdo Principal */}
       <div className="max-w-7xl mx-auto px-6 text-center relative z-20 pt-32 pb-20">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{
-            opacity: introFinished ? 1 : 0,
-            y: introFinished ? 0 : 20,
-          }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0A0A0A]/80 border border-[rgba(212,255,0,0.3)] text-xs font-mono uppercase tracking-widest text-[#D4FF00] mb-8 backdrop-blur-md shadow-[0_0_25px_rgba(212,255,0,0.15)]"
-        >
-          <Flame className="w-3.5 h-3.5" />
-          <span>O Complexo Esportivo Definitivo da Região</span>
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{
@@ -137,11 +123,10 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tighter text-white max-w-5xl mx-auto uppercase italic leading-[0.95]"
         >
-          Esqueça o amadorismo. Aqui a sua pelada tem{" "}
+          Aqui a sua pelada tem{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4FF00] via-[#a3cc00] to-white">
             ritmo de final de campeonato
           </span>
-          .
         </motion.h1>
 
         <motion.p
@@ -151,11 +136,10 @@ export default function Hero() {
             y: introFinished ? 0 : 20,
           }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="mt-6 text-lg sm:text-xl text-[#A3A3A3] max-w-2xl mx-auto font-medium leading-relaxed font-sans"
+          className="mt-6 text-lg sm:text-xl text-[#E5E5E5] max-w-2xl mx-auto font-medium leading-relaxed font-sans drop-shadow-md"
         >
-          Esqueça o piso duro e a iluminação precária. No Vila Society você
-          comanda o jogo em gramado sintético importado, placar integrado e
-          estrutura de clube europeu.
+          No Vila Society você comanda o jogo em gramado sintético importado,
+          placar integrado e estrutura de clube europeu.
         </motion.p>
 
         <motion.div
@@ -181,29 +165,29 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: introFinished ? 1 : 0 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-20 pt-10 border-t border-white/10 grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl mx-auto text-center"
+          className="mt-20 pt-10 border-t border-white/15 grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl mx-auto text-center"
         >
-          <div className="p-4 rounded-2xl bg-[#0A0A0A] border border-white/5 backdrop-blur-sm">
+          <div className="p-4 rounded-2xl bg-[#0A0A0A]/90 border border-white/10 backdrop-blur-md">
             <span className="block text-white font-black text-base uppercase tracking-wider font-mono">
               FIFA Quality Pro
             </span>
-            <span className="text-xs text-[#737373] uppercase tracking-wider mt-0.5 block font-mono">
+            <span className="text-xs text-[#A3A3A3] uppercase tracking-wider mt-0.5 block font-mono font-bold">
               Zero Risco de Lesão
             </span>
           </div>
-          <div className="p-4 rounded-2xl bg-[#0A0A0A] border border-white/5 backdrop-blur-sm">
+          <div className="p-4 rounded-2xl bg-[#0A0A0A]/90 border border-white/10 backdrop-blur-md">
             <span className="block text-white font-black text-base uppercase tracking-wider font-mono">
               Vestiários VIP
             </span>
-            <span className="text-xs text-[#737373] uppercase tracking-wider mt-0.5 block font-mono">
+            <span className="text-xs text-[#A3A3A3] uppercase tracking-wider mt-0.5 block font-mono font-bold">
               Duchas Térmicas & Biometria
             </span>
           </div>
-          <div className="col-span-2 md:col-span-1 p-4 rounded-2xl bg-[#0A0A0A] border border-white/5 backdrop-blur-sm">
+          <div className="col-span-2 md:col-span-1 p-4 rounded-2xl bg-[#0A0A0A]/90 border border-white/10 backdrop-blur-md">
             <span className="block text-white font-black text-base uppercase tracking-wider font-mono">
               Sports Bar 4K
             </span>
-            <span className="text-xs text-[#737373] uppercase tracking-wider mt-0.5 block font-mono">
+            <span className="text-xs text-[#A3A3A3] uppercase tracking-wider mt-0.5 block font-mono font-bold">
               Chopp Trincando & Resenha
             </span>
           </div>
