@@ -6,30 +6,30 @@ export default function Footer() {
   return (
     <footer
       id="contato"
-      className="border-t border-[#10B981]/15 bg-[#020503] py-20 text-[#94A3B8] text-sm"
+      className="border-t border-[rgba(212,255,0,0.15)] bg-[#050505] py-20 text-[#A3A3A3] text-sm"
     >
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         <div className="space-y-4 md:col-span-1">
           <div className="flex items-center gap-3">
-            <span className="font-bold text-white tracking-tight">
+            <span className="font-black text-white tracking-tighter uppercase italic text-base">
               Vila Society
             </span>
           </div>
-          <p className="text-xs text-[#94A3B8] leading-relaxed">
+          <p className="text-xs text-[#A3A3A3] leading-relaxed font-sans font-medium">
             O complexo esportivo definitivo para quem busca alta performance,
             tecnologia e sofisticação no futebol society.
           </p>
         </div>
 
         <div>
-          <h4 className="font-mono text-xs uppercase tracking-widest text-[#34D399] mb-4">
+          <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-[#D4FF00] mb-4">
             Navegação
           </h4>
-          <ul className="space-y-2 text-xs">
+          <ul className="space-y-2 text-xs font-mono font-bold uppercase tracking-wider">
             <li>
               <Link
                 href="#estrutura"
-                className="hover:text-[#34D399] transition-colors"
+                className="hover:text-[#D4FF00] transition-colors"
               >
                 Estrutura
               </Link>
@@ -37,7 +37,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#diferenciais"
-                className="hover:text-[#34D399] transition-colors"
+                className="hover:text-[#D4FF00] transition-colors"
               >
                 Tecnologia
               </Link>
@@ -45,7 +45,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#planos"
-                className="hover:text-[#34D399] transition-colors"
+                className="hover:text-[#D4FF00] transition-colors"
               >
                 Agendamento
               </Link>
@@ -53,7 +53,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#depoimentos"
-                className="hover:text-[#34D399] transition-colors"
+                className="hover:text-[#D4FF00] transition-colors"
               >
                 Comunidade
               </Link>
@@ -62,29 +62,29 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="font-mono text-xs uppercase tracking-widest text-[#34D399] mb-4">
+          <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-[#D4FF00] mb-4">
             Atendimento VIP
           </h4>
-          <ul className="space-y-2 text-xs">
+          <ul className="space-y-2 text-xs font-mono font-medium">
             <li className="flex items-center gap-2">
-              <MessageCircle className="w-3.5 h-3.5 text-[#10B981]" />
+              <MessageCircle className="w-3.5 h-3.5 text-[#D4FF00]" />
               <span>(11) 99999-9999</span>
             </li>
             <li className="flex items-center gap-2">
-              <MapPin className="w-3.5 h-3.5 text-[#10B981]" />
+              <MapPin className="w-3.5 h-3.5 text-[#D4FF00]" />
               <span>Av. dos Atletas, 1500 - São Paulo, SP</span>
             </li>
           </ul>
         </div>
 
         <div>
-          <h4 className="font-mono text-xs uppercase tracking-widest text-[#34D399] mb-4">
+          <h4 className="font-mono text-xs font-bold uppercase tracking-widest text-[#D4FF00] mb-4">
             Conecte-se
           </h4>
           <div className="flex items-center gap-3">
             <a
               href="#"
-              className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-[#10B981] hover:bg-[#10B981]/20 border border-[#10B981]/30 transition-colors shadow-[0_0_15px_rgba(16,185,129,0.15)]"
+              className="w-10 h-10 rounded-full bg-[#0A0A0A] flex items-center justify-center text-[#D4FF00] hover:bg-[rgba(212,255,0,0.2)] border border-[rgba(212,255,0,0.3)] transition-colors shadow-[0_0_15px_rgba(212,255,0,0.15)]"
               aria-label="Instagram"
             >
               <Globe className="w-4 h-4" />
@@ -93,16 +93,16 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-[#10B981]/10 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-[#94A3B8]/70">
+      <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-[#737373]">
         <p>
           &copy; {new Date().getFullYear()} Vila Society Elite Complex. Todos os
           direitos reservados.
         </p>
-        <div className="flex gap-6 mt-4 sm:mt-0">
-          <a href="#" className="hover:text-[#34D399] transition-colors">
+        <div className="flex gap-6 mt-4 sm:mt-0 font-bold uppercase tracking-wider">
+          <a href="#" className="hover:text-[#D4FF00] transition-colors">
             Política de Privacidade
           </a>
-          <a href="#" className="hover:text-[#34D399] transition-colors">
+          <a href="#" className="hover:text-[#D4FF00] transition-colors">
             Termos de Uso
           </a>
         </div>

@@ -2,16 +2,18 @@
 
 @layer base {
   :root {
-    --bg-field: #0a1410;
-    --field-green: #15803d;
-    --field-dark: #166534;
-    --pitch-line: rgba(255, 255, 255, 0.15);
+    --bg-arena: #050505;
+    --surface-arena: #0a0a0a;
+    --arena-accent: #d4ff00; /* Neon Lime de Alta Energia */
+    --arena-text: #e5e5e5;
+    --arena-muted: #737373;
+    --pitch-line: rgba(212, 255, 0, 0.1);
   }
 
   html,
   body {
-    background-color: var(--bg-field);
-    color: #f3f4f6;
+    background-color: var(--bg-arena);
+    color: var(--arena-text);
     font-family:
       system-ui,
       -apple-system,
@@ -23,17 +25,17 @@
   }
 }
 
-/* Textura sutil de gramado/campo nas seções */
+/* Textura sutil de campo com acentuação da Arena */
 .pitch-pattern {
   background-image:
-    linear-gradient(to right, rgba(21, 128, 61, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(21, 128, 61, 0.05) 1px, transparent 1px);
+    linear-gradient(to right, rgba(212, 255, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(212, 255, 0, 0.03) 1px, transparent 1px);
   background-size: 40px 40px;
 }
 
-/* Efeito de Vidro Estádio */
+/* Efeito de Vidro Estádio Premium */
 .stadium-glass {
-  background: rgba(10, 26, 18, 0.75);
+  background: rgba(10, 10, 10, 0.85);
   backdrop-filter: blur(16px);
-  border: 1px solid rgba(21, 128, 61, 0.25);
+  border: 1px solid rgba(212, 255, 0, 0.2);
 }
